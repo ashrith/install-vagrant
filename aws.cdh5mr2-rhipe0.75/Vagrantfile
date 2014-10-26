@@ -22,6 +22,6 @@ override.ssh.private_key_path = "path-to-pem"
 end
 config.vm.provision(
 :shell,
-:inline => "cd /tmp/;mkdir vagrant-script;cd vagrant-script; wget https://raw.githubusercontent.com/ashrith/install-vagrant/master/aws.cdh5mr2-rhipe0.75/install.sh -O install.sh;wget https://raw.githubusercontent.com/ashrith/install-vagrant/master/aws.cdh5mr2-rhipe0.75/tessera.sh -O tessera.sh; chmod +x install.sh;chmod +x tessera.sh;./install.sh;./tessera.sh;"
+:inline => "cd /tmp/;mkdir vagrant-script;cd vagrant-script; wget https://raw.githubusercontent.com/ashrith/install-vagrant/aws.specific/aws.cdh5mr2-rhipe0.75/install.sh -O install.sh;wget https://raw.githubusercontent.com/ashrith/install-vagrant/aws.specific/aws.cdh5mr2-rhipe0.75/tessera.sh -O tessera.sh; chmod +x install.sh;chmod +x tessera.sh;./install.sh;./tessera.sh;"
 )
 end
